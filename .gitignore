@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.tmp-*
+# Fetched batches, slide images, cloned repos and your decisions stay local.
+data/
+STOP
+loops/paused/

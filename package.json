@@ -1,0 +1,14 @@
+{
+  "name": "instagram-intake-triage",
+  "version": "1.0.0",
+  "description": "Paste Instagram post/reel links; fetch captions and carousel slides into a batch an agent triages into skills, opportunities or skips.",
+  "type": "module",
+  "author": "Ian Royes (https://github.com/ianroyes-sys)",
+  "engines": { "node": ">=20" },
+  "bin": { "intake-fetch": "scripts/intake-fetch.mjs" },
+  "scripts": {
+    "test": "node --test",
+    "fetch": "node scripts/intake-fetch.mjs --file",
+    "triage": "claude -p \"$(cat loops/intake-triage.md)\""
+  }
+}

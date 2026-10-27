@@ -1,0 +1,87 @@
+{
+ "id": "2026-01-05-120000",
+ "label": "Example IG drop",
+ "receivedAt": "2026-01-05T12:00:00.000Z",
+ "status": "triaged",
+ "triagedAt": "2026-01-05T12:20:00.000Z",
+ "summary": "4 links: 1 skill proposed, 1 opportunity on watch, 1 skipped (paid event), 1 reference.",
+ "items": [
+  {
+   "n": 1,
+   "url": "https://www.instagram.com/p/EXAMPLEaaa01/",
+   "platform": "instagram",
+   "shortcode": "EXAMPLEaaa01",
+   "owner": "example_ai_tools",
+   "mediaType": "GraphSidecar",
+   "caption": "7 Claude Code skills that changed how I ship. Comment SKILLS for the links.",
+   "slides": [],
+   "slideCount": 7,
+   "kind": "skill",
+   "title": "Commit-message writer skill",
+   "verdict": "proposed",
+   "reason": "Slide 4 names the repo. No skill for commit messages exists yet; MIT licensed, no network calls or hooks.",
+   "repos": [
+    {
+     "name": "example-org/commit-writer-skill",
+     "url": "https://github.com/example-org/commit-writer-skill"
+    }
+   ],
+   "followups": [
+    "Install: copy repos/commit-writer-skill/skills/commit-writer -> ~/.claude/skills/commit-writer",
+    "Security: reads git diff only; no network, no telemetry, no install script."
+   ]
+  },
+  {
+   "n": 2,
+   "url": "https://www.instagram.com/reel/EXAMPLEbbb02/",
+   "platform": "instagram",
+   "shortcode": "EXAMPLEbbb02",
+   "owner": "example_careers",
+   "mediaType": "GraphVideo",
+   "caption": "Paid summer fellowship for student builders. Applications open now.",
+   "slides": [],
+   "slideCount": 1,
+   "kind": "opportunity",
+   "title": "Example Builders Fellowship 2027",
+   "verdict": "watch",
+   "reason": "Official page says applications open in January; no fee; eligibility matches.",
+   "actions": [
+    "watch: recheck the official page in January"
+   ]
+  },
+  {
+   "n": 3,
+   "url": "https://www.instagram.com/p/EXAMPLEccc03/",
+   "platform": "instagram",
+   "shortcode": "EXAMPLEccc03",
+   "owner": "example_hustle",
+   "mediaType": "GraphImage",
+   "caption": "Join my AI summit, early-bird ticket only $299.",
+   "slides": [],
+   "slideCount": 1,
+   "kind": "opportunity",
+   "title": "Paid AI summit",
+   "verdict": "skipped",
+   "reason": "Pay-to-attend event; fees are an automatic skip."
+  },
+  {
+   "n": 4,
+   "url": "https://github.com/example-org/prompt-linter",
+   "platform": "web",
+   "shortcode": null,
+   "owner": "",
+   "caption": "",
+   "slides": [],
+   "kind": "tool",
+   "title": "prompt-linter",
+   "verdict": "reference",
+   "reason": "Overlaps an installed review skill, which covers the same checks. Worth knowing, not worth a second tool.",
+   "repos": [
+    {
+     "name": "example-org/prompt-linter",
+     "url": "https://github.com/example-org/prompt-linter"
+    }
+   ]
+  }
+ ]
+}
